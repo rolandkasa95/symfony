@@ -30,7 +30,8 @@
         "symfony/polyfill-php55": "~1.0",
         "symfony/polyfill-php56": "~1.0",
         "symfony/polyfill-php70": "~1.0",
-        "symfony/polyfill-util": "~1.0"
+        "symfony/polyfill-util": "~1.0",
+        "symfony/intl": "2.8.52"
     },
     "replace": {
         "symfony/asset": "self.version",
@@ -52,7 +53,6 @@
         "symfony/framework-bundle": "self.version",
         "symfony/http-foundation": "self.version",
         "symfony/http-kernel": "self.version",
-        "symfony/intl": "self.version",
         "symfony/ldap": "self.version",
         "symfony/locale": "self.version",
         "symfony/monolog-bridge": "self.version",
@@ -117,6 +117,12 @@
     "autoload-dev": {
         "files": [ "src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rolandkasa95/intl"
+        }
+    ],
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
